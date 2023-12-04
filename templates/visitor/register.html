@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+    <div class="Login-page">
+        <form action="{{url_for('register')}}" method = "POST">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Name" name = "name">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" maxlength="15" placeholder="Mobile number" name="mobile_number">
+                <i class='bx bx-phone'></i>
+            </div>
+            <div class="input-box">
+                <input type="Email" placeholder="Email id" name="email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" minlength="8" placeholder="Password" name="password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            
+            <button type="submit" class="btn">Sign up </button>
+            <div class="register-link">
+                <p>Already have an acount? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
